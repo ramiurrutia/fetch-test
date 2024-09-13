@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prueba fetch</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/f272f2a8c2.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="sidebar-history">
+      <h2>Historial</h2>
+      <div id="history"></div>
+      <button id="clear-history">Borrar historial</button>
+    </div>
+    <div class="dashboard">
+      <div class="dashboard-header">
+        <form id="weatherForm">
+          <input
+            id="city"
+            name="city"
+            placeholder="Escribe una ciudad/nación"
+            required
+          />
+          <button type="submit">Buscar</button>
+        </form>
+      </div>
+      <div class="dashboard-body">
+        <div class="dashboard-top">
+          <div class="weather-resume">
+            <div class="weather-id">
+                <div class="weather-icon"></div>
+                <div class="weather-description"></div>
+            </div>
+            <div class="weather-temp"></div>
+          </div>
+          <div class="city-info">
+            <div class="weather-time"></div>
+            <div class="weather-location"></div>
+          </div>
+        </div>
+        <div class="extra-info">
+          <div class="feels-like"></div>
+          <div class="humidity"></div>
+          <div class="clouds"></div>
+          <div class="wind-direction"></div>
+          <div class="wind-speed"></div>
+        </div>
+        <div id="forecasts">
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="forecast.js"></script>
+  </body>
+</html>
